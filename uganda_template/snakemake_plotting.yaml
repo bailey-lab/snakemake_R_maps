@@ -1,0 +1,49 @@
+geojson_file: 'input_shape_files/uganda-with-regions.geojson'
+output_folder: 'output_files_more_colors'
+breakpoints: [-10,-0.0001,0.0001,2,4,10,20,40,60,80,90,101]
+#shading_colors: ['#CCD1D1',  '#bdc3c7', '#f9e79f', '#f4d03f', '#dc7633', '#e6b0aa', '#d98880', '#e74c3c', '#c0392b', '#922b21', '#d7bde2', '#8e44ad']
+shading_colors: ['#f2f3f4',  '#CCD1D1', '#f9e79f', '#f4d03f', '#dc7633', '#e6b0aa', '#e74c3c', '#c0392b', '#922b21', '#d7bde2', '#8e44ad']
+labels: ["not sampled", "0", "<2%", "<4%", "<10%", "<20%", '<40%', '<60%', '<80%', '<90%', '>90%']
+#breakpoints: [-10,-0.0001,0.0001,2,4,6,100]
+#shading_colors: ["#FAFBF9", "#CCD1D1", "#FFD99FB3", "#FFAC7CB3", "#FB796CB3", "#E74075B3"]
+#labels: ["not sampled", "0", "<2%", "<4%", "<6%", ">6%"]
+longitudes: [29.5, 35]
+latitudes: [-1.5,4.2]
+annotations_file: 'input_tables/annotations.csv'
+join_column: 'name'
+country_name: 'Uganda'
+years:
+  - '2016'
+  - '2019'
+  - '2022'
+mutations:
+  - crt_Met74Ile
+  - crt_Asn75Glu
+  - crt_Lys76Thr
+  - crt_Gln271Glu
+  - crt_Arg371Ile
+  - dhfr_Asn51Ile
+  - dhfr_Cys59Arg
+  - dhfr_Ser108Asn
+  - dhfr_Ile164Leu
+  - dhps_Ala437Gly
+  - dhps_Lys540Glu
+  - dhps_Ala581Gly
+  - k13_Lys108Glu
+  - k13_His136Asn
+  - k13_Lys189Asn
+  - k13_Lys189Thr
+  - k13_Arg255Lys
+  - k13_Leu258Met
+  - k13_Gln271His
+  - k13_Cys469Phe
+  - k13_Cys469Tyr
+  - k13_Asn490Thr
+  - k13_Arg561His
+  - k13_Ala578Ser
+  - k13_Ala675Val
+  - mdr1_Asn86Tyr
+  - mdr1_Tyr184Phe
+  - mdr1_Asp650Asn
+  - mdr1_Asn652Asp
+  - mdr1_Asp1246Tyr
